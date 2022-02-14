@@ -4,7 +4,7 @@ LoanCalc is a program written in Python that calculates financial info based on 
 ## Command Line Argumentation Version
 This version of the program takes input in the command line interface before the program is run. This makes it easier for a user with a programming background to use the program. This is used with the Python module ```argparse```. 
 ### Usage
-While running the program, include arguments. If there are any doubts, use the ```--help``` flag.  
+While running the program, include arguments.  
 Ex: 
 ```bash
 > python3 LoanCalcluator.py --type=diff --principal=1000000 --periods=10 --interest=10
@@ -20,6 +20,7 @@ Month 9: payment is 101667
 Month 10: payment is 100834
 Overpayment = 45837
 ```
+ If there are any doubts, use the ```--help``` flag.
 ## User Input Version (COMING SOON)
 This version of the program takes user input after the program is run. This works by entering letters that trigger different scenarios in the program. This is designed for beginners with no prior knowledge of programming
 ### Usage
