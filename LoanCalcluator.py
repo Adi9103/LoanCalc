@@ -23,7 +23,7 @@ def diffCalc(principal, interest, periods, payment):
         payment = math.ceil(payment)
         print("Month {}: payment is {}".format(m,payment))
         overpayment = overpayment+payment
-    print("Overpayment = {}".format(overpayment-principal))
+    print("Total Interest = {}".format(overpayment-principal))
     
 def annuityCalc(principal, interest, periods, payment):
     if interest is None:
@@ -35,7 +35,7 @@ def annuityCalc(principal, interest, periods, payment):
         payment = math.ceil(principal * (interest*raisedRate)/(raisedRate-1))
         print("Your monthly payment = {}!".format(payment))
         overpayment = math.ceil(payment*periods - principal)
-        print("Overpayment = {}".format(overpayment))
+        print("Total Interest = {}".format(overpayment))
     if principal is None:
         interest = (interest) / (12*100)
         raisedRate = math.pow(1+interest,periods)
@@ -43,7 +43,7 @@ def annuityCalc(principal, interest, periods, payment):
         principal = math.floor(principal)
         print("Your loan principal = {}!".format(principal))
         overpayment = payment*periods - principal
-        print("Overpayment = {}".format(overpayment))
+        print("Total Interest = {}".format(overpayment))
     if periods is None:
         interest = (interest) / (12*100)
         inLog = payment / (payment - interest*principal)
@@ -62,7 +62,7 @@ def annuityCalc(principal, interest, periods, payment):
                 periods = periods - (numYear*12)
                 print("It will take {} years and {} months to repay this loan!".format(numYear,periods))
         overpayment = payment*periods - principal
-        print("Overpayment = {}".format(overpayment))
+        print("Total Interest = {}".format(overpayment))
     
     
 args = parser.parse_args()
