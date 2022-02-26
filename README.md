@@ -27,10 +27,13 @@ This version of the program takes user input after the program is run. This work
 After running the program, follow the instructions.  
 Ex:
 
-```bash
+```shell
 > python3 LoanCalcSimple.py
-What do you want to calculate?
-type "n" for number of monthly payments,
-type "a" for annuity monthly payment amount,
-type "p" for loan principal: 
+Annuity Payment: Type "annuity"
+Differentiated Payment: Type "diff
+Number of Monthly Payments: Type "n"
+Monthly Payment Amount: Type "m"
+Loan Principal: Type "p"
+
+
 ```
