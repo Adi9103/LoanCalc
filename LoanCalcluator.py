@@ -48,6 +48,7 @@ def annuityCalc(principal, interest, periods, payment):
         interest = (interest) / (12*100)
         inLog = payment / (payment - interest*principal)
         periods = math.log(inLog, 1+interest)
+        periodsCopy = periods
         if periods%1>=0:
             periods = math.ceil(periods)
         numYear = periods//12
@@ -61,8 +62,8 @@ def annuityCalc(principal, interest, periods, payment):
             else:
                 periods = periods - (numYear*12)
                 print("It will take {} years and {} months to repay this loan!".format(numYear,periods))
-        overpayment = payment*periods - principal
-        print("Total Interest = {}".format(overpayment))
+        overpayment = payment*periodsCopy - principal
+        print("Total Interest = {}".format(round(overpayment,2)))
     
     
 args = parser.parse_args()
