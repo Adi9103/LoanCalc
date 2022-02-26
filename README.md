@@ -1,6 +1,18 @@
 # LoanCalc
 LoanCalc is a program written in Python that calculates financial info based on the information that the user provides. 
 
+## User Input Version (NOW AVAILABLE)
+This version of the program takes user input after the program is run. This works by entering letters that trigger different scenarios in the program. This is designed for beginners with no prior knowledge of programming
+### Usage
+After running the program, follow the instructions.  
+Ex:
+
+```shell
+> python3 LoanCalcSimple.py
+Annuity Payment: Type "annuity"
+Differentiated Payment: Type "diff
+```
+
 ## Command Line Argumentation Version
 This version of the program takes input in the command line interface before the program is run. This makes it easier for a user with a programming background to use the program. This is used with the Python module ```argparse```. 
 ### Usage
@@ -18,22 +30,6 @@ Month 7: payment is 103334
 Month 8: payment is 102500
 Month 9: payment is 101667
 Month 10: payment is 100834
-Overpayment = 45837
+Total Interest = 45837
 ```
  If there are any doubts, use the ```--help``` flag.
-## User Input Version (COMING SOON)
-This version of the program takes user input after the program is run. This works by entering letters that trigger different scenarios in the program. This is designed for beginners with no prior knowledge of programming
-### Usage
-After running the program, follow the instructions.  
-Ex:
-
-```shell
-> python3 LoanCalcSimple.py
-Annuity Payment: Type "annuity"
-Differentiated Payment: Type "diff
-Number of Monthly Payments: Type "n"
-Monthly Payment Amount: Type "m"
-Loan Principal: Type "p"
-
-
-```
