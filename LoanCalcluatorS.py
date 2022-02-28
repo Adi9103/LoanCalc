@@ -34,7 +34,7 @@ if paymentType == "annuity":
 
 
 
-    if resultType == "m":
+    if resultType == "n":
 
 
 
@@ -68,7 +68,7 @@ if paymentType == "annuity":
         overpayment = payment*periodsCopy - principal
         print("Total Interest = {}".format(round(overpayment,2)))
 
-    if resultType == "a":
+    if resultType == "m":
 
         principal = int(input(f"Enter the loan principal: "))
         princCheck(principal)
