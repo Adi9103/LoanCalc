@@ -7,7 +7,7 @@ This version of the program takes user input after the program is run. This work
 After running the program, follow the instructions.  
 Ex:
 
-```shell
+```console
 > python3 LoanCalcSimple.py
 Annuity Payment: Type "annuity"
 Differentiated Payment: Type "diff
@@ -18,7 +18,7 @@ This version of the program takes input in the command line interface before the
 ### Usage
 While running the program, include arguments.  
 Ex: 
-```bash
+```console
 > python3 LoanCalcluator.py --type=diff --principal=1000000 --periods=10 --interest=10
 Month 1: payment is 108334
 Month 2: payment is 107500
